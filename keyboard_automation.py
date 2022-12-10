@@ -12,11 +12,11 @@ def perform_ocr():
     controller = mouse.Controller()
 
     # Get the current position of the mouse cursor
-    os.system("say 'Move to first position'")
+    os.system("say 'Move to first top left position'")
     sleep(5)
     x1, y1 = controller.position
     print(x1, y1)
-    os.system("say 'move to next position'")
+    os.system("say 'move to second bottom right position'")
     sleep(5)
 
     # Get the current position of the mouse cursor
