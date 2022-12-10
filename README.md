@@ -1,3 +1,5 @@
+![Screenshot 2565-12-10 at 18 33 13](https://user-images.githubusercontent.com/32159637/206853487-13b6868e-ea2e-447a-8089-cbd2f743ded0.png)
+
 # OCR and Text Input
 
 This script uses optical character recognition (OCR) to extract text from a selected region of the screen, and then types the text using a virtual keyboard.
