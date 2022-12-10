@@ -12,17 +12,17 @@ def perform_ocr():
     controller = mouse.Controller()
 
     # Get the current position of the mouse cursor
-    os.system("say 'Move to first position' &")
+    os.system("say 'Move to first position'")
     sleep(5)
     x1, y1 = controller.position
     print(x1, y1)
-    os.system("say 'move to next position' &")
+    os.system("say 'move to next position'")
     sleep(5)
 
     # Get the current position of the mouse cursor
     x2, y2 = controller.position
     print(x2, y2)
-    os.system("say 'Done' &")
+    os.system("say 'Done'")
 
     # Calculate the bounding box of the selected region
     x1, y1, x2, y2 = map(int, (x1, y1, x2, y2))
@@ -41,7 +41,6 @@ def perform_ocr():
 
     return text
 
-
 def type_character(char):
     # Create a keyboard controller
     controller = keyboard.Controller()
@@ -49,7 +48,6 @@ def type_character(char):
     # Type the character
     controller.press(char)
     controller.release(char)
-
 
 # Wait 5 seconds
 start_time = perf_counter()
