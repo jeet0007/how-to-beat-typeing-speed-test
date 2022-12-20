@@ -17,6 +17,9 @@ This script uses optical character recognition (OCR) to extract text from a sele
     ```bash
     pip install -r requirements.txt
     ```
+    ```bash
+    brew install tesseract
+    ```
 4. Select the region of the screen to perform OCR on by moving mouse to the top-left corner of the region, 
 5. Wait 5 seconds
 6. If the extracted text is correct, press `y` to confirm. Otherwise, press `n` and repeat step 3.

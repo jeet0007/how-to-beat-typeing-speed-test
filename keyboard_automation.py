@@ -13,11 +13,11 @@ def perform_ocr():
 
     # Get the current position of the mouse cursor
     os.system("say 'Move to first top left position'")
-    sleep(5)
+    sleep(2)
     x1, y1 = controller.position
     print(x1, y1)
     os.system("say 'move to second bottom right position'")
-    sleep(5)
+    sleep(2)
 
     # Get the current position of the mouse cursor
     x2, y2 = controller.position
@@ -63,6 +63,6 @@ text = text.replace("\n", " ")
 for char in text:
     # Wait a short amount of time between each character
     start_time = perf_counter()
-    while perf_counter() - start_time < 0.01:
+    while perf_counter() - start_time < 0.05:
         pass
     type_character(char)
