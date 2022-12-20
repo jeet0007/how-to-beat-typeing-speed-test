@@ -46,8 +46,15 @@ def type_character(char):
     controller = keyboard.Controller()
 
     # Type the character
-    controller.press(char)
-    controller.release(char)
+    # if char is capital press shift
+    if char.isupper():
+        controller.press(keyboard.Key.shift)
+        controller.press(char.lower())
+        controller.release(char.lower())
+        controller.release(keyboard.Key.shift)
+    else:
+        controller.press(char)
+        controller.release(char)
 
 # Wait 5 seconds
 start_time = perf_counter()
